@@ -1,4 +1,6 @@
 # Syötteen lukeminen
+import age
+
 name = input ("Anna nimesi: ")
 # name = "Matti"
 # \ on escape-merkki, jolla voi tuottaa esim. tabin tai rivi
@@ -22,3 +24,9 @@ height = input("Anna pituus: ")
 
 # tulos f-string muodossa, ei tarvita  str() - funktiota
 print(f"Nimi: {name}, Ikä: {age*2}, Pituus: {height}." )
+
+
+
+# kokonaisluvun kokonaisluvun arpominen väliltä 1-6
+
+
