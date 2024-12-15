@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Äänestysohjelma</title>
+</head>
+<body>
+    <h1>Äänestysohjelma</h1>
+    <form id="candidateForm">
+        <label for="numCandidates">Anna ehdokkaiden määrä:</label>
+        <input type="number" id="numCandidates" name="numCandidates" required>
+        <button type="submit">Seuraava</button>
+    </form>
+    <div id="candidateInputs"></div>
+    <form id="voterForm" style="display:none;">
+        <label for="numVoters">Anna äänestäjien määrä:</label>
+        <input type="number" id="numVoters" name="numVoters" required>
+        <button type="submit">Aloita äänestys</button>
+    </form>
+    <div id="votingSection" style="display:none;">
+        <div id="voterInputs"></div>
+        <button id="voteButton">Laske äänet</button>
+    </div>
+    <div id="results"></div>
+    <script src="teht10.js"></script>
+</body>
+</html>

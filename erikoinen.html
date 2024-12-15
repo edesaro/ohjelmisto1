@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #4caf50;
+        }
+        p {
+            color: #333;
+        }
+        .random-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .random-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Random Page!</h1>
+        <p>This is a simple random page created for testing purposes. Press the button below to see something random!</p>
+        <button class="random-btn" onclick="showRandomFact()">Show Random Fact</button>
+        <p id="random-fact"></p>
+    </div>
+
+    <script>
+        const facts = [
+            "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3000 years old!",
+            "Bananas are berries, but strawberries aren’t!",
+            "Octopuses have three hearts.",
+            "A day on Venus is longer than a year on Venus.",
+            "Wombat poop is cube-shaped.",
+        ];
+
+        function showRandomFact() {
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];
+            document.getElementById('random-fact').innerText = randomFact;
+        }
+    </script>
+</body>
+</html>
